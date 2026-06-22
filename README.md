@@ -316,7 +316,7 @@ Install via: `pip install -r requirements.txt`
 
 ## Author
 
-**ALU Student** | Introduction to Machine Learning Summative Project  
+**KALISA IVAN** | Introduction to Machine Learning Summative Project  
 GitHub: [@ikalisa1](https://github.com/ikalisa1)  
 Date: June 2026
 
