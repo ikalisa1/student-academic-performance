@@ -1,0 +1,116 @@
+# Reproducibility Configuration
+# Set these at the start of the notebook to ensure identical results across runs
+
+random_seed: 42
+
+# Dataset Configuration
+dataset_name: "Student Academic Performance Dataset"
+source_url: "https://archive.ics.uci.edu/ml/index.php"
+train_test_split: 0.8
+validation_split: 0.2
+cross_validation_folds: 5
+stratify: true
+
+# Classical ML Hyperparameters
+
+## Experiment 1: Logistic Regression (Baseline)
+logistic_regression_1:
+  C: 1.0
+  penalty: 'l2'
+  max_iter: 1000
+  solver: 'lbfgs'
+  random_state: 42
+
+## Experiment 2: Random Forest (Baseline)
+random_forest_2:
+  n_estimators: 100
+  max_depth: 10
+  min_samples_split: 5
+  min_samples_leaf: 2
+  random_state: 42
+
+## Experiment 3: Random Forest (Tuned - Increased Depth)
+random_forest_3:
+  n_estimators: 200
+  max_depth: 15
+  min_samples_split: 3
+  min_samples_leaf: 1
+  random_state: 42
+
+## Experiment 4: SVM with RBF Kernel
+svm_4:
+  C: 1.0
+  kernel: 'rbf'
+  gamma: 'scale'
+  probability: true
+  random_state: 42
+
+## Experiment 5: XGBoost (Baseline)
+xgboost_5:
+  n_estimators: 100
+  max_depth: 5
+  learning_rate: 0.1
+  subsample: 0.8
+  colsample_bytree: 0.8
+  random_state: 42
+
+## Experiment 6: XGBoost (Regularized)
+xgboost_6:
+  n_estimators: 200
+  max_depth: 7
+  learning_rate: 0.05
+  subsample: 0.8
+  colsample_bytree: 0.8
+  reg_lambda: 1.0
+  reg_alpha: 0.1
+  random_state: 42
+
+# Deep Learning Hyperparameters
+
+## Experiment 7: Sequential NN (Conservative)
+sequential_nn_7:
+  architecture: [128, 64, 32, 2]
+  dropout_rate: 0.3
+  learning_rate: 0.001
+  batch_size: 32
+  epochs: 100
+  early_stopping_patience: 15
+  validation_split: 0.2
+  random_state: 42
+
+## Experiment 8: Sequential NN (Deeper)
+sequential_nn_8:
+  architecture: [256, 128, 64, 32, 2]
+  dropout_rate: 0.5
+  learning_rate: 0.001
+  batch_size: 32
+  epochs: 100
+  early_stopping_patience: 15
+  validation_split: 0.2
+  random_state: 42
+
+## Experiment 9: Functional Multi-Input API
+functional_nn_9:
+  numeric_branch: [64, 32]
+  categorical_embedding_dim: 8
+  dropout_rate: 0.4
+  learning_rate: 0.001
+  batch_size: 32
+  epochs: 100
+  early_stopping_patience: 15
+  validation_split: 0.2
+  random_state: 42
+
+# Evaluation Metrics (computed for all models)
+metrics:
+  - 'accuracy'
+  - 'precision'
+  - 'recall'
+  - 'f1_score'
+  - 'roc_auc'
+  - 'confusion_matrix'
+
+# Output Paths
+results_dir: '../results/'
+experiment_log: '../results/experiment_results.csv'
+plots_dir: '../results/'
