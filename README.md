@@ -390,11 +390,11 @@ See Academic Report for full reference list.
 
 ## Author
 
-[Your Name]  
+KALISA IVAN  
 ALU - Introduction to Machine Learning Summative Project  
 June 2026
 
 ---
 
-**GitHub Repository:** [Link to your repo]  
+**GitHub Repository:** https://github.com/ikalisa1/student-academic-performance.git  
 **Demo Video:** [Link to your video]
