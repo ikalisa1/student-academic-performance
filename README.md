@@ -396,5 +396,5 @@ June 2026
 
 ---
 
-**GitHub Repository:** https://github.com/ikalisa1/student-academic-performance.git  
-**Demo Video:** [Link to your video]
+**GitHub Repository:** https://github.com/ikalisa1/student-academic-performance  
+**Demo Video:** https://drive.google.com/file/d/1hry56xDZU0DJTjUxi58pwJ3SaVBg8g71/view?usp=sharing
