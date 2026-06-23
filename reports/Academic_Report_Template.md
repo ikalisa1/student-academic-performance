@@ -1,9 +1,10 @@
 # Predicting Student Academic Performance Using Machine Learning and Deep Learning: A Comparative Analysis
 
-**Student Name:** [Your Name]  
+**Student Name:** Kalisa Ivan 
 **Institution:** African Leadership University  
 **Course:** Introduction to Machine Learning - Summative Project  
 **Date:** June 2026  
+**Demo Video (Unlisted):** https://drive.google.com/file/d/1hry56xDZU0DJTjUxi58pwJ3SaVBg8g71/view?usp=sharing  
 **Word Count:** [Insert final count] (Target: 3,500-5,000 words, excluding references)
 
 ---
@@ -365,6 +366,13 @@ This study presents the first systematic comparison of classical ML and deep lea
 - Causal inference: identify interventions causally improving outcomes
 - Federated learning: enable institutions to train models on sensitive data locally
 - Personalized models: separate prediction models for different student subgroups
+
+---
+
+### 6.4 Submission Links
+
+- **GitHub Repository:** https://github.com/ikalisa1/student-academic-performance
+- **Demo Video (Unlisted):** https://drive.google.com/file/d/1hry56xDZU0DJTjUxi58pwJ3SaVBg8g71/view?usp=sharing
 
 ---
 
